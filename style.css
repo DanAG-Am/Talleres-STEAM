@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Langar', 'Kiwi Maru', 'Koh Santepheap', 'Klee One', 'Lilita One', sans-serif;
+}
+
+html, body {
+    height: 100%; /* Ensure the html and body are full height */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Langar', sans-serif; /* Default font family */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('One.png'); /* Ensure the image path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Ensure items are stacked vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text alignment */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(241, 233, 255, 0.12); /* Use RGBA for overlay opacity */
+    z-index: -1; /* Make sure it’s behind the text */
+}
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Ensure nav spans the full width */
+    position: absolute; /* Position nav at the top */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure nav is above other content */
+    text-align: center;
+}
+
+nav .logo {
+    font-size: 26px;
+    color: #732C8C;
+    font-family: 'Langar';
+    margin-left: 20px;
+}
+
+nav .nav-links {
+    flex: 1; /* Take up the remaining space */
+    display: flex;
+    justify-content: center; /* Center align the navigation links */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    font-size: 43px;
+    font-family: 'Klee One', sans-serif;
+}
+
+.hero-text {
+    color: #000; /* Default text color */
+    margin-bottom: 20px; /* Space below the hero-text */
+}
+
+.hero-text h1 {
+    font-family: 'Koh Santepheap'; /* Apply Koh Santepheap font */
+    font-weight: 400; /* Adjust weight as needed */
+    font-size: 60px; /* Adjust size as needed */
+    line-height: 1.3; /* Adjust line height for spacing */
+}
+
+.purple {
+    font-family: 'Koh Santepheap';
+    color: #6114AE; /* Color for specific words */
+}
+
+.additional-text {
+    margin-top: 20px; /* Space above additional text */
+    padding: 0 20px; /* Padding to prevent text from touching edges */
+    max-width: 800px; /* Optional: Set a max-width for better readability */
+}
+
+.additional-text p {
+    font-family: 'Koh Santepheap'; /* Use Koh Santepheap font */
+    font-size: 24px; /* Adjust size as needed */
+    color: #000000; /* Text color */
+    font-weight: 200;
+    line-height: 1.6; /* Adjust line height for readability */
+    text-align: center;
+}
+
+.blocks {
+    display: flex;
+    justify-content: center; /* Center the blocks horizontally */
+    gap: 20px; /* Space between blocks */
+    margin-top: 40px; /* Space above the blocks */
+}
+
+.block {
+    margin-top: 40px;
+    background-color: #732C8C; /* Purple color */
+    color: #ffffff; /* White text color */
+    padding: 20px; /* Space inside the block */
+    font-family: 'Koh Santepheap'; /* Font for text inside blocks */
+    font-size: 24px; /* Text size */
+    font-weight: 200; /* Text weight */
+    text-align: center; /* Center text inside the block */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
+    width: 200px; /* Fixed width */
+}
+
+.block-aprende {
+    transform: rotate(-12deg); /* Rotate "aprende" block 12 degrees */
+}
+
+.block-convive {
+    transform: rotate(12deg); /* Rotate "convive" block -12 degrees */
+}
+
+.hero {
+    /* Existing styles... */
+    flex-direction: column; /* Ensure blocks are stacked below other content */
+}
+
+/* nosotros */
+
+.nosotros {
+    background-color: #F1E9FF; /* Lilac color */
+    padding: 20px; /* Add some padding to make it look nicer */
+}
+
+.nosotros .container {
+    position: relative; /* Add this to create a containing block */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-right-image {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text-container {
+    font-family: 'Lilita One', sans-serif; /* Ensure correct font and fallback */
+    width: 50%;
+}
+
+.text-container h2, .text-container h3, .text-container h4 {
+    font-family: 'Lilita One', sans-serif; /* Ensure correct font and fallback */
+    margin-bottom: 20px;
+}
+
+.bold-text {
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Lilita One', sans-serif; /* Ensure correct font and fallback */
+    text-align: left;
+}
+
+.nosotros .container img {
+    margin-top: 50px;
+    width: 40%;
+    margin-left: 20px;
+}
+
+.nosotros h2 {
+    margin-top: 50px;
+    font-family: 'Langar', sans-serif; /* Ensure font family is correct */
+    font-size: 48px;
+    font-weight: 200;
+    color: #732C8C;
+    margin-left: 20px;
+}
+
+.nosotros h3, .nosotros h4 {
+    margin-top: 25px;
+    font-family: 'Koh Santepheap', sans-serif; /* Ensure font family is correct */
+    font-size: 20px;
+    font-weight: 200;
+    color: #000000;
+}
+
+
+.nosotros p{
+    font-family: 'Lilita One'; /* Add cursive as a fallback font */
+    text-align: center;
+    font-size: 45px;
+}
+
+.bold-text {
+    margin-top:35px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family:'Lilita One' ;
+    text-align: left;
+  }
+  
+/* Talleres */
+.talleres {
+    background-color: #F1E9FF; /* Light gray background */
+    padding: 50px; /* Add some padding to make it look nicer */
+  }
+  
+  .talleres .container {
+    position: relative; /* Add this to create a containing block */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .talleres .text-container {
+    font-family: 'Langar'; /* Ensure correct font and fallback */
+    width: 50%;
+  }
+  
+  .talleres .text-container h2{
+    margin-top: 50px;
+    font-family: 'Langar', sans-serif; /* Ensure font family is correct */
+    font-size: 48px;
+    font-weight: 200;
+    color: #732C8C;
+    margin-left: 20px;
+  }
+
+  .talleres .text-container h3{
+    margin-top: 25px;
+    font-family: 'Koh Santepheap', sans-serif; /* Ensure font family is correct */
+    font-size: 20px;
+    font-weight: 200;
+    color: #000000;
+  }
+
+.talleres .text-container p {
+    font-family: 'Koh Santepheap', sans-serif; /* Ensure correct font and fallback */
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+  .talleres .bold-text {
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Lilita One', sans-serif; /* Ensure correct font and fallback */
+    text-align: left;
+  }
+  
+  .talleres .container img {
+    margin-top: 50px;
+    width: 40%;
+    margin-left: 20px;
+  }
+
+  /* materiales */
+
+  .materiales {
+    background-color: #F1E9FF; /* Light gray background */
+    padding: 50px; /* Add some padding to make it look nicer */
+}
+
+.materiales-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Langar', sans-serif; /* Ensure font family is correct */
+    font-size: 48px;
+    font-weight: 200;
+    color: #732C8C;
+    margin-left: 20px;
+}
+
+.material-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.material-item {
+    flex: 1;
+    max-width: 30%; /* Make each item take up to 30% of the width */
+    text-align: center;
+}
+
+.material-frame {
+    background-color: #D9B4FF; /* Pastel purple frame */
+    padding: 15px;
+    border-radius: 10px;
+    width: 275px; /* Set the width of the frame */
+    height: 350px; /* Set the height of the frame */
+    margin: 0 auto; /* Center the frame horizontally */
+}
+
+.material-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: auto;
+    border-radius: 10px;
+}
+
+.material-text {
+    font-family: 'Lilita One';
+    margin-top: 10px;
+}
+
+.material-text p {
+    margin: 0;
+    font-family: 'Lilita One';
+    font-size: 30px;
+}
+
+/* Contacto */
+
+.contacto {
+    background-color: #F1E9FF; /* Light gray background */
+    padding: 50px; /* Add some padding to make it look nicer */
+    text-align: center; /* Center the text horizontally */
+}
+
+.contacto-title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Langar'; /* Ensure font family is correct */
+    font-size: 48px;
+    font-weight: 200;
+    color: #732C8C;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.contacto-text {
+    margin: 20px auto; /* Add some margin to separate the blocks */
+    font-family: 'Koh Santepheap'; /* Ensure font family is correct */
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.contacto-text p {
+    margin: 10px 0; /* Add some margin to separate the paragraphs */
+}
+
+/* General Styles for Small Screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 20px;
+    }
+
+    .additional-text p {
+        font-size: 18px;
+    }
+
+    .blocks {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .block {
+        width: auto;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .nosotros .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nosotros .text-container {
+        width: 100%;
+    }
+
+    .nosotros .container img {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .talleres .text-container {
+        width: 100%;
+    }
+
+    .talleres .container img {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .material-grid {
+        flex-direction: column;
+    }
+
+    .material-item {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .material-frame {
+        width: 100%;
+        height: auto;
+    }
+
+    .contacto-text {
+        font-size: 18px;
+    }
+}
+
+/* Additional Styles for Extra Small Screens */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .additional-text p {
+        font-size: 16px;
+    }
+
+    .blocks {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .block {
+        width: auto;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .nosotros .text-container h2,
+    .talleres .text-container h2,
+    .materiales-title,
+    .contacto-title {
+        font-size: 36px;
+    }
+
+    .nosotros .text-container p,
+    .talleres .text-container p,
+    .material-text p,
+    .contacto-text p {
+        font-size: 16px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blocks {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap in small screens */
+    justify-content: center;
+}
+
+body {
+    padding: 0 10px; /* Add some padding to the body */
+}
+
+.container {
+    padding: 0 15px; /* Add some padding to containers */
+}
