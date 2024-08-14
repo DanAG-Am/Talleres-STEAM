@@ -384,13 +384,12 @@ nav ul li a {
 /* General Styles for Small Screens */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
+        display: none;
     }
 
     nav ul li {
         margin: 10px 0;
+        flex: wrap;
     }
 
     .hero-text h1 {
@@ -454,56 +453,7 @@ nav ul li a {
     }
 }
 
-/* Additional Styles for Extra Small Screens */
-@media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 24px;
-    }
 
-    .additional-text p {
-        font-size: 16px;
-    }
-
-    .blocks {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .block {
-        width: auto;
-        padding: 10px;
-        font-size: 18px;
-    }
-
-    .nosotros .text-container h2,
-    .talleres .text-container h2,
-    .materiales-title,
-    .contacto-title {
-        font-size: 36px;
-    }
-
-    .nosotros .text-container p,
-    .talleres .text-container p,
-    .material-text p,
-    .contacto-text p {
-        font-size: 16px;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.blocks {
-    display: flex;
-    flex-wrap: wrap; /* Ensure items wrap in small screens */
-    justify-content: center;
-}
-
-body {
-    padding: 0 10px; /* Add some padding to the body */
-}
 
 .container {
     padding: 0 15px; /* Add some padding to containers */
