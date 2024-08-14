@@ -451,6 +451,9 @@ nav ul li a {
     .contacto-text {
         font-size: 18px;
     }
+    .logo{
+        display:none;
+    }
 }
 
 
